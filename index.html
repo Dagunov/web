@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mikhail Matsykh</title>
+	<style>
+		.black-div{
+			background: #34252F;
+			font-size: 10vw;
+			color: #BEC5AD;
+			text-align: center;
+			font-family: "Roboto";
+			transition: all 1s;
+		}
+		.black-div-last img{
+			border: none;
+			transition: all 1s;
+		}
+		.black-div-last{
+			font-size: 36px;
+			background: #34252F;
+			color: #BEC5AD;
+			text-align: center;
+			font-family: "Roboto";
+			transition: all 1s;
+		}
+
+		.bright-div-1{
+			background: #D6D1CD;
+			color: #0B032D;
+			font-size: 36px;
+			font-family: "Roboto";
+			transition: all 1s;
+		}
+		img{
+			width: 322px;
+			height: 240px;
+			border: 22px solid #FFB997;
+			transition: all 1s;
+		}
+		.bright-div-3 img{
+			width: 171px;
+			height: 225px;
+			border: 22px solid #FFB997;
+			transition: all 1s;
+		}
+
+		.block-d1{
+			padding-top: 31px;
+			padding-bottom: 31px;
+			display: flex;
+			justify-content: center;
+			transition: all 1s;
+		}
+		.block-d1 span{
+			margin: auto;
+			margin-left: 40px;
+			margin-right: 40px;
+			width: 400px;
+			flex-shrink: 0;
+			transition: all 1s;
+		}
+		
+		.bright-div-2{
+			background: #D6D1CD;
+			color: #0B032D;
+			font-size: 36px;
+			font-family: "Roboto";
+			transition: all 1s;
+		}
+		.block-d2{
+			padding-top: 31px;
+			padding-bottom: 31px;
+			display: flex;
+			justify-content: center;
+			transition: all 1s;
+		}
+		.block-d2-div{
+			margin: auto;
+			margin-left: 150px;
+			margin-right:20px;
+			width: 400px;
+			flex-shrink: 0;
+			transition: all 1s;
+		}
+		.bright-div-2 span{
+			font-size: 30px;
+			transition: all 1s;
+		}
+
+		.bright-div-3{
+			background: #D6D1CD;
+			color: #0B032D;
+			font-size: 24px;
+			font-family: "Roboto";
+			display: flex;
+			align-content: space-around;
+			flex-direction: column;
+			transition: all 1s;
+		}
+		.block-d3-big{
+			justify-content: space-around;
+			display: flex;
+			margin-top: 40px;
+			transition: all 1s;
+		}
+		.block-d3{
+			display: flex;
+			flex-direction: column;
+			height: 350px;
+			transition: all 1s;
+		}
+		.block-d3 span{
+			margin: auto;
+			transition: all 1s;
+		}
+
+		.contacts{
+			display: flex;
+			flex-direction: column;
+			margin-top: 45px;
+			transition: all 1s;
+		}
+		.contacts span{
+			padding-left: 20px;
+			transition: all 1s;
+		}
+		.contact{
+			display: flex;
+			justify-content: center;
+			margin-top: 35px;
+			transition: all 1s;
+		}
+		.contacts img{
+			height: 43px;
+			width: 43px;
+			transition: all 1s;
+		}
+		.contact-phone{
+			height: 80px;
+			width: 300px;
+			text-align: left;
+			transition: all 1s;
+		}
+		.contact-phone span{
+			font-size: 18px;
+			transition: all 1s;
+		}
+		.phone-block{
+			font-size: 24px;
+			margin-right: 50px;
+			padding-top: 20px;
+			transition: all 1s;
+		}
+		.write-me{
+			font-size: 64px;
+			margin-top: -30px;
+			transition: all 1s;
+		}
+		.interested{
+			position: relative;
+			top: -80px;
+			transition: all 1s;
+		}
+
+		@media (min-width: 992px) and (max-width: 1199px){
+			.bright-div-1{
+				font-size: 30px;
+			}
+			.bright-div-2{
+				font-size: 30px;
+			}
+			.bright-div-2 span{
+				font-size: 24px;
+			}
+			.block-d2-div{
+				margin-left: 100px;
+			}
+			.contact-phone{
+				font-size: 20px;
+				width: 240px;
+			}
+			.contact-phone span{
+				font-size: 14px;
+			}
+			.phone-block{
+				margin-right: 20px;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 991px){
+			img{
+				width: 215px;
+				height: 160px;
+				border: 15px solid #FFB997;
+			}
+			.bright-div-1{
+				font-size: 26px;
+			}
+			.bright-div-2{
+				font-size: 26px;
+			}
+			.bright-div-2 span{
+				font-size: 20px;
+			}
+			.block-d2-div{
+				margin-left: 100px;
+				width: 300px;
+			}
+			.black-div-last{
+				font-size: 30px;
+			}
+			.contact-phone{
+				font-size: 16px;
+				width: 200px;
+			}
+			.contact-phone span{
+				font-size: 12px;
+			}
+			.phone-block{
+				margin-right: 5px;
+			}
+		}
+		@media (min-width: 576px) and (max-width: 767px){
+			img{
+				width: 143px;
+				height: 107px;
+				border: 10px solid #FFB997;
+			}
+			.bright-div-1{
+				font-size: 20px;
+			}
+			.block-d1 span{
+				margin-left: 40px;
+				margin-right: 40px;
+				width: 250px;
+			}
+			.bright-div-2{
+				font-size: 20px;
+			}
+			.bright-div-2 span{
+				font-size: 16px;
+			}
+			.block-d2-div{
+				margin-left: 30px;
+				width: 230px;
+			}
+			.bright-div-3 img{
+				width: 114px;
+				height: 150px;
+				border: 15px solid #FFB997;
+			}
+			.bright-div-3{
+				font-size: 20px;
+			}
+			.block-d3{
+				height: 240px;
+			}
+			.black-div-last{
+				font-size: 22px;
+			}
+			.contacts img{
+				height: 27px;
+				width: 27px;
+			}
+			.contacts{
+				margin-top: 0px;
+			}
+			.contact-phone{
+				font-size: 14px;
+				width: 150px;
+			}
+			.contact-phone span{
+				font-size: 12px;
+			}
+			.phone-block{
+				margin-right: 0px;
+			}
+			.write-me{
+				font-size: 48px;
+				margin-top: -40px;
+			}
+		}
+		@media (max-width: 575px){
+			img{
+				width: 143px;
+				height: 107px;
+				border: 10px solid #FFB997;
+			}
+			.bright-div-1{
+				font-size: 22px;
+				text-align: center;
+			}
+			.block-d1{
+				flex-direction: column;
+			}
+			.block-d1 span{
+				margin: auto;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+			.block-d1 img{
+				margin:auto;
+			}
+
+			.bright-div-2{
+				font-size: 20px;
+			}
+			.bright-div-2 span{
+				font-size: 16px;
+			}
+			.block-d2-div{
+				margin-left: 10px;
+				width: 230px;
+			}
+
+			.bright-div-3 img{
+				margin: auto;
+			}
+			.bright-div-3{
+				font-size: 36px;
+			}
+			.block-d3{
+				height: 360px;
+				margin-top: 30px;
+			}
+			.block-d3-big{
+				flex-direction: column;
+			}
+
+			.contact-phone{
+				width: 300px;
+				text-align: center;
+			}
+			.contact-phone span{
+				font-size: 18px;
+			}
+			.phone-block{
+				font-size: 24px;
+				margin-right: 50px;
+				padding-top: 20px;
+			}
+			.write-me{
+				font-size: 56px;
+				margin-top: 10px;
+			}
+			.interested{
+				position: relative;
+				top: 0px;
+			}
+			.contacts img{
+				height: 27px;
+				width: 27px;
+			}
+			.contacts span{
+				font-size: 18px;
+			}
+			.contact{
+				margin-top: 15px;
+			}
+			.contacts{
+				margin-top: 0px;
+			}
+			.black-div-last{
+				font-size: 28px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="black-div">
+			Я - Міхаіл Мацих.
+	</div>
+	<div class="black-div" style="font-size: 15vw">
+			Я
+	</div>
+	<div class="bright-div-1">
+		<div class="block-d1">
+			<img src="img\kyiv.png"><span>народився в місті Київ<br>у далекому 2001 році;</span>
+		</div>
+		<div class="block-d1">
+			<span>грався шумівкою;</span><img src="img\shum.png">
+		</div>
+		<div class="block-d1">
+			<img src="img\karusel.png"><span>розбив голову на каруселі;</span>
+		</div>
+		<div class="block-d1">
+			<span>закінчив Фінансовий ліцей<br>міста Києва з вісімкою<br>з української мови;</span><img src="img\fl.png">
+		</div>
+		<div class="block-d1">
+			<img src="img\kpi.png"><span>вступив до НТУУ КПІ, де<br>й надалі продовжую байдикувати.</span>
+		</div>
+	</div>
+	<div class="black-div" style="font-size: 15vw">
+			Я можу:
+	</div>
+	<div class="bright-div-2">
+		<div class="block-d2">
+			<img src="img\pc.png">
+			<div class="block-d2-div">
+				Програмувати на:<br><br><span style="display: flex"><div> - C/C++<br> - Java<br> - Python</div><div style="margin-left: 50px"> - Lua<br> - PL/SQL</div></span>
+			</div>
+		</div>
+		<div class="block-d2">
+			<img src="img\guitar.png">
+			<div class="block-d2-div">
+				Грати на:<br><br><span style="display: flex"><div> - Гітарі<br> - Скрипці</div><div style="margin-left: 50px"> - Піаніно<br> - Флейті</div></span>
+			</div>
+		</div>
+		<div class="block-d2">
+			<img src="img\ya.png">
+			<div class="block-d2-div">
+				Писати:<br><br><span style="display: flex"><div> - Прозу<br> - Поезію<br> - Драму</div><div style="margin-left: 50px"> - Код<br> - Коментарі до<br>   коду (іноді)</div></span>
+			</div>
+		</div>
+		<div class="block-d2">
+			<img src="img\velik.png">
+			<div class="block-d2-div">
+				А також:<br><br><span style="display: flex"><div> - Їздити на велосипеді<br> - Плавати<br> - Підтягуватися один раз<br> - Готувати омлет</div></span>
+			</div>
+		</div>
+	</div>
+	<div class="black-div" style="font-size: 15vw">
+			Крім того, я:
+	</div>
+	<div class="bright-div-3">
+		<div class="block-d3-big">
+			<div class="block-d3">
+				<img src="img\serious.png"><span>Серйозний</span>
+			</div>
+			<div class="block-d3">
+				<img src="img\patriot.png"><span>Патріотичний</span>
+			</div>
+			<div class="block-d3">
+				<img src="img\gen.png"><span>Фотогеничний</span>
+			</div>
+		</div>
+		<div class="block-d3-big">
+			<div class="block-d3">
+				<img src="img\fun.png"><span>Смішний</span>
+			</div>
+			<div class="block-d3">
+				<img src="img\notme.png"><span>Це не я</span>
+			</div>
+			<div class="block-d3">
+				<img src="img\chudo.png"><span>Чудовий</span>
+			</div>
+		</div>
+	</div>
+	<div class="black-div-last">
+		<div align="right" class="phone-block">
+			<div class="contact-phone">
+				+38-095-88-312-43<br><span>(а більше в мене телефонів немає)</span>
+			</div>
+		</div>
+		<div class="interested">
+			Зацікавлені?
+		</div>
+		<div class="write-me">
+			Пишіть мені!
+		</div>
+		<div class="contacts">
+			<div class="contact">
+				<img src="img\tg.png"><span>@cheebeel</span>
+			</div>
+			<div class="contact">
+				<img src="img\gmail.png"><span>manualgamer3@gmail.com</span>
+			</div>
+			<div class="contact">
+				<img src="img\fb.png"><span>https://www.facebook.com/mikhail.matsykh</span>
+			</div>
+		</div>
+		<div style="margin-top: 45px">
+			<img src="img\me.png" style="height: 103px; width: 103px">
+		</div>
+		<div style="font-size: 24px; margin-top: 25px; padding-bottom: 25px">
+			Чекаю на ваше повідомлення!
+		</div>
+	</div>
+</body>
