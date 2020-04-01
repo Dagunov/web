@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мемопостачальник</title>
+	<style>
+		.yellow-div{
+			box-shadow: 0 0 40px rgba(0, 0, 0, .3) inset;
+			background: #E6E49F;
+			font-size: 64px;
+			color: #25291C;
+			text-align: center;
+			font-family: "Roboto";
+			transition: all 1s;
+		}
+		.green-div{
+			box-shadow: 0 0 40px rgba(0, 0, 0, .3) inset;
+			background: #9ABD97;
+			font-size: 64px;
+			color: #25291C;
+			text-align: center;
+			font-family: "Roboto";
+			transition: all 1s;
+		}
+		.head-div{
+			background: #BDC2BF;
+			font-size: 24px;
+			color: #25291C;
+			font-family: "Roboto";
+			transition: all 1s;
+			display: flex;
+			justify-content: space-between;
+		}
+		.bottom-div{
+			background: #BDC2BF;
+			text-align: center;
+			font-size: 36px;
+			color: #25291C;
+			font-family: "Roboto";
+			transition: all 1s;
+		}
+		.head-div img{
+			width: 300px;
+			height: 60px;
+			transition: all 1s;
+		}
+		.button {
+			background-color: #BDC2BF;
+			border: none;
+			color: #25291C;
+			padding-bottom: 16px;
+			padding-top: 16px;
+			width: 175px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-family: "Roboto";
+			font-size: 24px;
+			float: left;
+			transition-duration: 0.3s;
+		}
+		.menu-button {
+			display: none;
+			background-color: #BDC2BF;
+			border: none;
+			text-decoration: none;
+		}
+		.button:hover {
+			background-color: #acb1ae;
+		}
+
+		.b1d1{
+			transition: all 1s;
+			display: flex;
+			flex-direction: column;
+			padding-top: 60px;
+			padding-bottom: 60px;
+			width: 830px;
+			margin: auto;
+		}
+		.b1t1{
+			transition: all 1s;
+		}
+		.b1t2{
+			transition: all 1s;
+			font-size: 18px;
+			padding-top: 40px;
+			margin-right: auto;
+		}
+
+
+		.b {
+			background-color: transparent;
+			border: none;
+			color: #25291C;
+			padding-bottom: 16px;
+			padding-top: 16px;
+			width: 300px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-family: "Roboto";
+			font-size: 48px;
+			transition-duration: 0.3s;
+		}
+		.b:hover {
+			background-color: #7f9b7c;
+		}
+		.b2d1{
+			transition: all 1s;
+			display: flex;
+			justify-content: space-between;
+			padding-top: 40px;
+			padding-bottom: 60px;
+		}
+		.b2d2 img{
+			transition: all 1s;
+			width: 500px;
+			height: 500px;
+			border: 3px solid #25291C;
+		}
+		.b2d2{
+			transition: all 1s;
+			display: flex;
+			justify-content: space-evenly;
+			padding-bottom: 120px;
+		}
+		.b2t1{
+			transition: all 1s;
+			font-size: 36px;
+			text-align: left;
+		}
+		.b2t2{
+			transition: all 1s;
+			font-size: 48px;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.b2d4{
+			transition: all 1s;
+			display: flex;
+			flex-direction: column;
+			width: 650px;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.b2d5{
+			transition: all 1s;
+			display: flex;
+			justify-content: space-around;
+		}
+
+
+
+
+		.b2{
+			background-color: #CF9893;
+			border-radius: 80px;
+			border: 1px solid #25291C;
+			color: #25291C;
+			padding-bottom: 16px;
+			padding-top: 16px;
+			margin-top: 60px;
+			margin-bottom: 60px;
+			width: 300px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-family: "Roboto";
+			font-size: 36px;
+			transition-duration: 0.3s;
+		}
+		.b2:hover{
+			background-color: #d7aaa6;
+		}
+		
+		.botd1{
+			display: flex;
+			transition: all 1s;
+			justify-content: center;
+			padding-top: 30px;
+		}
+		.bott1{
+			transition: all 1s;
+			padding-top: 18px;
+		}
+
+		.bott2{
+			transition: all 1s;
+			padding-top: 80px;
+		}
+		.bott3{
+			transition: all 1s;
+			padding-top: 80px;
+			font-size: 64px;
+		}
+		.botd2{
+			padding-bottom: 30px;
+			transition: all 1s;
+		}
+
+
+		.contacts{
+			display: flex;
+			flex-direction: column;
+			margin-top: 45px;
+			transition: all 1s;
+		}
+		.contacts span{
+			padding-left: 20px;
+			transition: all 1s;
+		}
+		.contact{
+			display: flex;
+			justify-content: center;
+			margin-top: 35px;
+			transition: all 1s;
+		}
+		.contacts img{
+			height: 43px;
+			width: 43px;
+			transition: all 1s;
+		}
+
+		@media (min-width: 992px) and (max-width: 1199px){
+			.button{
+				width: 150px;
+			}
+			.b2d2 img{
+				width: 400px;
+				height: 400px;
+			}
+			.b2d4{
+				width: 500px;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 991px){
+			.button{
+				width: 108px;
+			}
+			.b1d1{
+				width: 618px;
+				font-size: 48px;
+			}
+
+			.b2d2 img{
+				width: 300px;
+				height: 300px;
+			}
+			.b2d4{
+				width: 400px;
+			}
+			.b2t1{
+				font-size: 24px;
+			}
+			.b2t2{
+				font-size: 36px;
+			}
+			.b2{
+				font-size: 30px;
+				width: 200px;
+			}
+		}
+		@media (min-width: 576px) and (max-width: 767px){
+			.button{
+				display: none;
+			}
+			.menu-button{
+				display: inline-block;
+			}
+			.menu-button img{
+				width: 55px;
+				height: 55px;
+			}
+			.botd1{
+				flex-direction: column;
+			}
+			.botd1 img{
+				width: 370px;
+				height: 50px;
+				margin: auto;
+			}
+			.botd2{
+				padding-top: 20px;
+			}
+			.botd2 img{
+				width: 300px;
+				height: 200px;
+			}
+			.bott2{
+				padding-top: 40px;
+			}
+			.bott3{
+				padding-top: 40px;
+			}
+			.contact{
+				font-size: 27px;
+			}
+			.contacts img{
+				height: 35px;
+				width: 35px;
+			}
+			.contacts{
+				margin-top: 0px;
+			}
+
+
+
+			.b1d1{
+				width: 520px;
+				font-size: 40px;
+			}
+			.b2d2{
+				flex-direction: column;
+				padding-bottom: 40px;
+			}
+			.b2d2 img{
+				width: 350px;
+				height: 350px;
+			}
+			.b2d4{
+				width: 400px;
+				margin: auto;
+			}
+			.b2t1{
+				font-size: 24px;
+			}
+			.b2t2{
+				font-size: 36px;
+			}
+			.b2{
+				font-size: 30px;
+				width: 200px;
+			}
+
+		}
+		@media (max-width: 575px){
+			.button{
+				display: none;
+			}
+			.menu-button{
+				display: inline-block;
+			}
+			.menu-button img{
+				width: 55px;
+				height: 55px;
+			}
+			.botd1{
+				flex-direction: column;
+			}
+			.botd1 img{
+				width: 370px;
+				height: 50px;
+				margin: auto;
+			}
+			.botd2{
+				padding-top: 20px;
+			}
+			.botd2 img{
+				width: 300px;
+				height: 200px;
+			}
+			.bott2{
+				padding-top: 40px;
+			}
+			.bott3{
+				padding-top: 40px;
+			}
+
+			.contacts img{
+				height: 27px;
+				width: 27px;
+			}
+			.contacts span{
+				font-size: 18px;
+			}
+			.contact{
+				margin-top: 15px;
+			}
+			.contacts{
+				margin-top: 20px;
+			}
+
+
+
+			.b1d1{
+				width: 330px;
+				font-size: 36px;
+			}
+			.b2d2{
+				flex-direction: column;
+				padding-bottom: 40px;
+			}
+			.b2d2 img{
+				width: 350px;
+				height: 350px;
+			}
+			.b2d4{
+				width: 400px;
+				margin: auto;
+			}
+			.b2t1{
+				font-size: 24px;
+			}
+			.b2t2{
+				padding-top: 40px;
+				font-size: 36px;
+			}
+			.b{
+				font-size: 24px;
+			}
+			.b2{
+				font-size: 30px;
+				width: 200px;
+				margin: auto;
+				margin-top: 40px;
+			}
+			.b2d5{
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="head-div">
+		<img src="img\title-top.png">
+		<div class="buttons">
+			<button class="button">Послуги</button>
+			<button class="button">Ціни</button>
+			<button class="button">Про нас</button>
+			<button class="button">Акаунт</button>
+			<button class="menu-button"><img src="img\menu.png"></button>
+		</div>
+	</div>
+	<div class="yellow-div">
+		<div class="b1d1">
+			<div class="b1t1">Худі ‘Verified meme expert’<br>(‘Підтверджений мемолог’)</div>
+			<div class="b1t2">Код товару: КНЕРССХ</div>
+		</div>
+	</div>
+	<div class="green-div">
+		<div class="b2d1">
+			<button class="b">Опис</button>
+			<button class="b">Розміри</button>
+			<button class="b">Відгуки</button>
+		</div>
+		<div class="b2d2">
+			<div class="b2d3"><img src="img\p10.png"></div>
+			<div class="b2d4">
+				<div class="b2t1">Вважаєш себе експертом у галузі мемів? Чи не вважаєш? Якщо чесно, то це взагалі не має зупиняти тебе перед покупкою цієї шикарної худі.</div>
+				<div class="b2d5">
+					<div class="b2t2">899 UAH</div>
+					<button class="b2">Додати до кошику</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="bottom-div">
+		<div class="botd1">
+			<div class="bott1">Твій кращий</div>
+			<img src="img\title-bot.png">
+		</div>
+		<div class="bott2">
+			Залишилися питання?
+		</div>
+		<div class="bott3">
+			Пишіть нам!
+		</div>
+		<div class="contacts">
+			<div class="contact">
+				<img src="img\tg.png"><span>@memegiver</span>
+			</div>
+			<div class="contact">
+				<img src="img\gmail.png"><span>memegiver@gmail.com</span>
+			</div>
+			<div class="contact">
+				<img src="img\fb.png"><span>https://www.facebook.com/memegiver</span>
+			</div>
+		</div>
+		<div class="botd2">
+			<img src="img\logo.png">
+		</div>
+	</div>
+</body>
