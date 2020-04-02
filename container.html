@@ -60,11 +60,42 @@
 			float: left;
 			transition-duration: 0.3s;
 		}
+		.buttonm{
+			background-color: #BDC2BF;
+			border: none;
+			color: #25291C;
+			padding-bottom: 4px;
+			padding-top: 4px;
+			width: 120px;
+			text-align: left;
+			text-decoration: none;
+			display: inline-block;
+			font-family: "Roboto";
+			font-size: 18px;
+			transition-duration: 0.3s;
+		}
+		.buttonm:hover {
+			background-color: #acb1ae;
+		}
 		.menu-button {
 			display: none;
 			background-color: #BDC2BF;
 			border: none;
 			text-decoration: none;
+			margin-left: auto;
+		}
+		.sub-menu{
+			display: none;
+			margin-left: -40px;
+		}
+		.menu-button:focus ~ .sub-menu, 
+		.menu-button:active ~ .sub-menu, 
+		.sub-menu:hover { 
+		   display: block; 
+		} 
+		.topd{
+			display: flex;
+			flex-direction: column;
 		}
 		.button:hover {
 			background-color: #acb1ae;
@@ -447,7 +478,15 @@
 			<button class="button">Ціни</button>
 			<button class="button">Про нас</button>
 			<button class="button">Акаунт</button>
-			<button class="menu-button"><img src="img\menu.png"></button>
+			<div class="topd">
+				<a class="menu-button" tabindex="1"><img src="img\menu.png"></a>
+				<ul class="sub-menu">
+					<button class="buttonm">Послуги</button>
+					<button class="buttonm">Ціни</button>
+					<button class="buttonm">Про нас</button>
+					<button class="buttonm">Акаунт</button>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="yellow-div">
