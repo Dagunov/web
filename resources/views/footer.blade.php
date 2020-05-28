@@ -1,0 +1,1 @@
+<footer class="footer">WD-40 © 2020</footer>
